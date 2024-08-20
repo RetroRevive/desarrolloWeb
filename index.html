@@ -1,0 +1,142 @@
+<!--
+Author: Juan Pablo Bustamante
+Date: August 12 2024
+Last Modification: August 12 2024 | 09:28
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Metadata and external resources -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML BASICO</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./src/images/icon/iconGit.ico" />
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="/css/myStyle.css" />
+  </head>
+
+  <!-- js -->
+  <script src="/js/main.js"></script>
+
+  <!-- All visible content of the page -->
+  <body>
+    <header>
+      <h1>Introducción al HTML5</h1>
+      <p>En este documento exploraremos los elementos básicos del HTML5</p>
+    </header>
+
+    <!-- Ejemplo de elementos de texto comunes (<a> <strong> <em> otros)-->
+    <section id="text-elements" name="text-elements">
+      <h2>Etiquetas y atributos Comunes</h2>
+      <p>
+        Este es un ejemplo de <strong>texto en negrita</strong> y
+        <em>texto en cursiva</em>
+      </p>
+      <p>
+        Tambien podemos crear <br />
+        <img
+          src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp"
+          alt="cat"
+          height="250px"/>
+      </p>
+    </section>
+
+    <!-- Ejemplo de nuevas etiquetas/elementos -->
+    <section id="new-elements" name="new-elements">
+      <h2>Nuevos elementos en HTML5</h2>
+      <div class="container">
+        <span>Div</span> y <span>span</span> son elementos de contenedor.
+      </div>
+    </section>
+
+    <!-- Ejemplo de video y audio-->
+    <section id="media-elements" name="media-elements">
+      <h2>Video y Audio</h2>
+
+      <!-- Youtube He tratado -->
+      <iframe
+        width="300"
+        height="215"
+        src="https://www.youtube.com/embed/3TsGZyq-BfY?si=pNlCfVeyBg-GtcLB">
+      </iframe
+      ><br />
+
+      <!-- Video de Desconocida -->
+      <video width="320" height="240" controls>
+        <source src="/src/videos/desconocida.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <br />
+
+      <!-- Audio de Booker T -->
+      <audio controls>
+        <source src="/src/audios/BookerT.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.</audio
+      ><br />
+    </section>
+
+    <!-- Canvas -->
+    <section id="canvas-element" name="canvas-element">
+      <h2>Canvas</h2>
+      <canvas id="myCanvas">
+        Your browser does not support the HTML5 canvas tag.
+      </canvas>
+    </section>
+
+    <!-- SVG: Gráficos vectoriales escalables -->
+    <section id="svg-element" name="svg-element">
+      <h2>SVG: Graficos escalables</h2>
+
+      <svg width="400" height="200">
+        <rect
+          x="210"
+          y="40"
+          rx="20"
+          ry="20"
+          width="150"
+          height="150"
+          style="
+            fill: rgb(203, 192, 192);
+            stroke: black;
+            stroke-width: 3;
+            opacity: 0.5;"/>
+
+        <polygon
+          points="100,10 40,198 190,78 10,78 160,198"
+          style="
+            fill: rgb(136, 1, 1);
+            stroke: black;
+            stroke-width: 3;
+            fill-rule: evenodd;
+            opacity: 0.5;"/>
+      </svg>
+    </section>
+
+
+    <!-- Formularios -->
+    <section id="exampleForm" name ="exampleForm">
+    <form>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br>
+      <label for="dateForm">Born date:</label><br>
+      <input type="date" id="dateForm" name="dateForm"><br>
+      <label for="colorFav">Color favorito:</label><br>
+      <input type="color" id="colorFav" name="colorFav"><br>
+    </form> 
+    </section> 
+    <!-- Web Storage -->
+    <!-- Drag and Drop -->
+    <!-- Geolocation -->
+
+    <footer>
+      <h5>
+        Ejemplo basico para enseñar los elementos y funcionalidades de HTML5
+      </h5>
+    </footer>
+  </body>
+</html>
